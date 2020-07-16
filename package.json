@@ -1,0 +1,22 @@
+{
+  "name": "nohistory",
+  "version": "1.0.0",
+  "description": "chatting app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss CSS/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariamamen30/NoHistory-chatting-app-template.git"
+  },
+  "author": "mariam amen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariamamen30/NoHistory-chatting-app-template/issues"
+  },
+  "homepage": "https://github.com/mariamamen30/NoHistory-chatting-app-template#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
