@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
@@ -110,7 +114,31 @@
     </div>
 
     <div class="chat-section">
-      <div class="chat"></div>
+      <div class="chat">
+        <div class="chat__left"></div>
+        <div class="chat__right">
+          <div class="chat__options"></div>
+          <div class="chat__chat-body"></div>
+          <div class="chat__message">
+            <div class="chat__message-container">
+              <textarea
+                type="text"
+                class="chat__input"
+                placeholder="write a message"
+              ></textarea>
+              <div class="chat__icon-container">
+                <a href="#"><i class="far fa-smile"></i></a>
+                <a href="#"><i class="fas fa-paperclip"></i></a>
+                <a href="#"><i class="far fa-image"></i></a>
+              </div>
+            </div>
+
+            <a href="#" class="chat__send-icon u-center-text"
+              >Send <i class="fas fa-paper-plane"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- <section class="grid-test">

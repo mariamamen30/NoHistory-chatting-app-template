@@ -229,6 +229,95 @@ body {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.6); }
 
+.chat-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff; }
+
+.chat {
+  height: 100%;
+  width: 100%;
+  display: table; }
+  .chat__left {
+    display: table-cell;
+    width: 33.33333333%;
+    background-color: #7ed56f; }
+  .chat__right {
+    display: table-cell;
+    width: 66.6666666667%;
+    position: relative; }
+  .chat__options {
+    color: #7ed56f;
+    height: 8rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.15); }
+  .chat__message {
+    border-top: 1px solid #eee;
+    box-shadow: 0 5rem 3rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 8rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    display: flex; }
+  .chat__message-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 55px;
+    width: 80%;
+    height: 90%;
+    box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.2);
+    overflow: hidden; }
+  .chat__input {
+    height: 90%;
+    width: 70%;
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    border: none;
+    font-family: Lato;
+    font-size: 1.6rem;
+    box-shadow: none;
+    color: #777;
+    resize: none;
+    outline: none; }
+  .chat__icon-container {
+    display: flex;
+    font-size: 2.2rem;
+    padding: 0.5rem;
+    text-align: center;
+    width: 25%;
+    justify-content: space-evenly;
+    float: right; }
+    .chat__icon-container a:link,
+    .chat__icon-container a:visited {
+      text-decoration: none;
+      color: #7ed56f; }
+    .chat__icon-container a:hover {
+      color: #55c57a; }
+    .chat__icon-container a:active {
+      color: #55c57a; }
+  .chat__send-icon:link, .chat__send-icon:visited {
+    font-size: 2.2rem;
+    padding: 1rem 2rem;
+    min-width: 20%;
+    min-width: 5rem;
+    float: right;
+    margin-left: 3rem;
+    background-color: #7ed56f;
+    border-radius: 50rem;
+    color: #fff;
+    box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.2);
+    text-decoration: none; }
+  .chat__send-icon:hover {
+    background-color: #55c57a; }
+  .chat__send-icon:active {
+    background-color: #55c57a;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
+
 .section-form {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100vh;
