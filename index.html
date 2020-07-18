@@ -3,12 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
     <title>No History</title>
   </head>
   <body>
-    <header></header>
+    <!-- <nav class="navigation"></nav> -->
+    <header class="header">
+      <div class="header__center">
+        <div class="row">
+          <div class="col-1-of-2">
+            <h1 class="heading-primary">
+              <span class="heading-primary heading-primary--span"
+                >No History</span
+              >
+            </h1>
+          </div>
+
+          <div class="col-1-of-2">
+            <div class="card">
+              <div class="card__text u-mb-big">
+                <p>
+                  Enjoy our free, disposable and anonymous web chat. Create,
+                  discuss and forget it ever existed!
+                </p>
+              </div>
+              <div class="u-center-text">
+                <a href="#section-form" class="btn btn--green"
+                  >Start chating!</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
+
+    <div class="section-form" id="section-form">
+      <form action="#" class="form">
+        <a href="#" class="form__close">&times;</a>
+        <div class="form__group u-mt-med">
+          <label for="roomname" class="form__label">Room Name</label>
+          <input
+            type="text"
+            class="form__input"
+            id="roomname"
+            placeholder="Room Name"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label for="lifetime" class="form__label">Chat Lifetime</label>
+          <input
+            type="text"
+            class="form__input"
+            id="lifetime"
+            placeholder="Chat Lifetime"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label for="members" class="form__label">Max Chat Members</label>
+          <input
+            type="text"
+            class="form__input"
+            id="members"
+            placeholder="Max Chat Members"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label for="password" class="form__label">Password</label>
+          <input
+            type="password"
+            class="form__input"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+
+        <div class="form__group u-center-text u-mt-med">
+          <button class="btn btn--green">Creat Room</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="chat-section">
+      <div class="chat"></div>
+    </div>
 
     <!-- <section class="grid-test">
       <div class="row">

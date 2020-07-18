@@ -1,0 +1,16 @@
+.card {
+  height: 40rem;
+  width: 60%;
+  background-color: rgba($color: $color-gray-light-1, $alpha: 0.7);
+  border-radius: 1rem;
+  float: right;
+  box-shadow: 0 3rem 4rem rgba($color: $color-black, $alpha: 0.8);
+  padding: 3rem;
+
+  &__text {
+    color: $color-black;
+    font-size: 2rem;
+    font-weight: 400;
+    hyphens: auto;
+  }
+}
