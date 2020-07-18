@@ -4,11 +4,13 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background-color: #eee;
-  height: 60rem;
-  width: 30%;
+  height: 62rem;
+  width: 37%;
   border-radius: 1rem;
   padding: 2rem 4rem;
   box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: 0.8);
+  // padding: 3rem;
+  // padding-left: 3re;
 
   transition: all 0.5s;
 
@@ -24,7 +26,7 @@
     font-size: 1.6rem;
     height: 4rem;
     width: 100%;
-    box-shadow: none;
+    box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.3);
     padding: 1rem;
     border-bottom: 3px solid transparent;
 

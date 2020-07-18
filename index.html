@@ -47,7 +47,19 @@
     <div class="section-form" id="section-form">
       <form action="#" class="form">
         <a href="#" class="form__close">&times;</a>
-        <div class="form__group u-mt-med">
+
+        <div class="form__group  u-mt-med">
+          <label for="username" class="form__label">Username</label>
+          <input
+            type="text"
+            class="form__input"
+            id="username"
+            placeholder="Username"
+            autofocus
+            required
+          />
+        </div>
+        <div class="form__group">
           <label for="roomname" class="form__label">Room Name</label>
           <input
             type="text"
@@ -91,7 +103,7 @@
           />
         </div>
 
-        <div class="form__group u-center-text u-mt-med">
+        <div class="form__group u-center-text u-mt-small">
           <button class="btn btn--green">Creat Room</button>
         </div>
       </form>
