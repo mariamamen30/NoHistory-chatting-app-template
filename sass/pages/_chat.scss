@@ -7,6 +7,7 @@
   height: 100%;
   width: 100%;
   display: table;
+
   &__left {
     display: table-cell;
     width: 33.33333333%;
@@ -78,10 +79,28 @@
   }
 
   &__members-container {
-    background-color: rgba($color: $color-white, $alpha: 0.7);
+    background-color: rgba($color: $color-white, $alpha: 0.9);
     height: 90%;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0 1.5rem 3rem rgba($color: $color-black, $alpha: 0.3);
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    & ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px re;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: red;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgb(54, 56, 58);
+    }
   }
 
   // right side
@@ -172,5 +191,9 @@
       background-color: $color-primary;
       box-shadow: 0 0 1rem rgba($color: $color-black, $alpha: 0.4);
     }
+  }
+
+  .contact {
+    height: 10rem;
   }
 }

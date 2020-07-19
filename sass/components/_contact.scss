@@ -1,0 +1,33 @@
+.contact {
+  background-color: transparent;
+  width: 85%;
+  padding: 2rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  &:not(:last-child) {
+    border-bottom: 1px solid #eee;
+  }
+  &__details {
+    display: inline-block;
+    text-overflow: ellipsis;
+  }
+  &__img {
+    border: 2px solid $color-white;
+    border-radius: 50rem;
+    height: 6rem;
+    width: 6rem;
+    display: inline;
+    margin-right: 1rem;
+  }
+  &__name {
+    display: inline-block;
+    font-size: 1.6rem;
+  }
+
+  &__message {
+    font-size: 1.4rem;
+    text-overflow: clip;
+  }
+}
