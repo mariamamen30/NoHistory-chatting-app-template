@@ -19,6 +19,7 @@
     display: table-cell;
     width: 66.6666666667%;
     position: relative;
+    height: 100%;
   }
   //left side
   &__left-middle {
@@ -83,23 +84,22 @@
     height: 90%;
     border-radius: 5px;
     box-shadow: 0 1.5rem 3rem rgba($color: $color-black, $alpha: 0.3);
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-scrollbar-width: thin;
+    scrollbar-width: thin;
     &::-webkit-scrollbar {
-      width: 20px;
+      width: 12px;
     }
 
-    & ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px re;
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
       border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background: red;
       border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-      background: rgb(54, 56, 58);
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
     }
   }
 
@@ -111,17 +111,25 @@
     top: 0;
     left: 0;
     box-shadow: 0 0.3rem 2rem rgba($color: $color-black, $alpha: 0.15);
+
+    .contact__message {
+      color: #777;
+    }
+    .contact {
+      float: left;
+    }
   }
   &__message {
     border-top: 1px solid #eee;
     box-shadow: 0 5rem 3rem rgba($color: $color-black, $alpha: 0.2);
-    position: absolute;
+
     bottom: 0;
     left: 0;
     height: 8rem;
     width: 100%;
     padding: 1rem 3rem;
     display: flex;
+    background-color: $color-white;
   }
   &__message-container {
     display: flex;
@@ -130,8 +138,8 @@
     border-radius: 55px;
     width: 80%;
     height: 90%;
-    box-shadow: 0 0.5rem 1.4rem rgba($color: $color-black, $alpha: 0.2);
     overflow: hidden;
+    box-shadow: 0 0.5rem 1.4rem rgba($color: $color-black, $alpha: 0.2);
   }
 
   &__input {
@@ -193,7 +201,12 @@
     }
   }
 
-  .contact {
-    height: 10rem;
+  &__chat-body {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    height: 75.5vh;
+    scrollbar-width: thin;
   }
 }

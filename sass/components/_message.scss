@@ -1,0 +1,44 @@
+.message {
+  border-radius: 5rem;
+  box-shadow: 0 0.5rem 2rem rgba($color: $color-black, $alpha: 0.1);
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  max-width: 50%;
+  margin-bottom: 2rem;
+
+  &--left {
+    background-color: $color-primary-light;
+    border-bottom-left-radius: 1rem;
+    float: left;
+    color: white;
+  }
+
+  &--right {
+    border-bottom-right-radius: 1rem;
+    float: right;
+  }
+
+  &__container {
+    display: flex;
+    &--left {
+      justify-content: start;
+    }
+    &--right {
+      justify-content: end;
+    }
+  }
+
+  &__img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50rem;
+    margin: 0 1rem;
+  }
+  &__body {
+    width: 95%;
+
+    margin: 0 auto;
+  }
+}
