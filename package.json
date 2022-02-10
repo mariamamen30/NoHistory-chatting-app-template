@@ -18,6 +18,6 @@
   "homepage": "https://github.com/mariamamen30/NoHistory-chatting-app-template#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   }
 }
